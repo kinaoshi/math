@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-QLL2FQJ10Z"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-QLL2FQJ10Z");
+    </script>
+    <meta charset="utf-8" />
+
+    <meta
+      content="小学校1年生、2年生レベルの簡単な計算問題アプリ。大人の脳トレにも役立つアプリです。"
+      name="description"
+    />
+    <meta name="viewport" content="width=device-width, initial-scalea=1" />
+    <title>簡単計算問題</title>
+   
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/CHANGE_THIS_TO_IMAGE_FULL_URL.png"
+      sizes="192x192"
+    />
+    <!-- <link rel="icon" href="favicon.ico" /> -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div>
+      <div id="container">
+        <div id="contain">
+          <div>ここを押すと問題がでるよ</div>
+
+          <div>➡</div>
+
+          <div id="start">もんだい</div>
+          <div>
+            <div id="clicks">0</div>
+            <p class="cou">問目</p>
+          </div>
+        </div>
+        <nav>
+          <span class="expl">たし算・ひとけた</span>
+          <span> すうじボタンをおしてね。 </span>
+        </nav>
+
+        <ul id="board">
+          <li id="numran1"></li>
+          <li class="order2">+</li>
+          <li id="numran2"></li>
+          <li class="order4">=</li>
+          <div class="input">
+            <span id="ansnum1"></span>
+            <span id="ansnum2"></span>
+            <span id="ansnum3"></span>
+          </div>
+        </ul>
+      </div>
+
+      <hr />
+
+      <section class="main">
+        <div id="btn">かくにん</div>
+        <div id="again" class="hidden">ちがうよ</div>        
+        <div id="output"></div>
+        <div id="icon">
+          <img class="imag hidden" src="img/face.png" alt="" />
+        </div>
+       <div>
+         <div id="come" class="hidden">せいかい</div>
+         <div class="nice">つぎも、<br>がんばってね</div>
+       </div>
+        
+      </section>
+      <div id="boards">
+        <ul class="row1">
+          <li class="box1">1</li>
+          <li class="box2">2</li>
+          <li class="box3">3</li>
+          <li class="box4">4</li>
+          <li class="box5">5</li>
+          <div class="redo">やりなおし</div>
+        </ul>
+
+        <ul class="row2">
+          <li class="box6">6</li>
+          <li class="box7">7</li>
+          <li class="box8">8</li>
+          <li class="box9">9</li>
+          <li class="box0">0</li>
+          <div class="reset">リセット</div>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div id="levelup">
+        <div class="lev">
+          <div class="explanation1 hidden">
+            <span>たし算</span><span>ひとけた</span>
+          </div>
+        </div>
+        <div class="lev9 hidden">
+          <div class="explanation92 hidden">
+            <span>２の段</span>
+          </div>
+        </div>
+        <div class="lev">
+          <div class="explanation2 hidden">
+            <span>たし算</span><span>ひだりはふたけた</span>
+          </div>
+        </div>
+        <div class="lev9 hidden">
+          <div class="explanation93 hidden">
+            <span>３の段</span>
+          </div>
+        </div>
+        <div class="lev">
+          <div class="explanation3 hidden">
+            <span>たし算</span><span>やさしいふたけた</span>
+          </div>
+        </div>
+        <div class="lev9 hidden">
+          <div class="explanation94 hidden">
+            <span>４の段</span>
+          </div>
+        </div>
+      </div>
+      <div id="levelup">
+        <div class="lev">
+          <div class="explanation4">
+            <span>ひき算</span><span>ひとけた</span>
+          </div>
+        </div>
+        <div class="lev9 hidden">
+          <div class="explanation95 hidden">
+            <span>５の段</span>
+          </div>
+        </div>
+        <div class="lev">
+          <div class="explanation5">
+            <span>ひき算</span><span>みぎはふたけた</span>
+          </div>
+        </div>
+        <div class="lev9 hidden">
+          <div class="explanation96 hidden">
+            <span>６の段</span>
+          </div>
+        </div>
+        <div class="lev">
+          <div class="explanation6">
+            <span>ひき算</span><span>やさしいふたけた</span>
+          </div>
+        </div>
+        <div class="lev9 hidden">
+          <div class="explanation97 hidden">
+            <span>７の段</span>
+          </div>
+        </div>
+      </div>
+      <div id="levelup">
+        <div class="lev">
+          <div class="explanation7">
+            <span>たし算</span><span>ふたけた</span>
+          </div>
+        </div>
+        <div class="lev9 hidden">
+          <div class="explanation98 hidden">
+            <span>８の段</span>
+          </div>
+        </div>
+        <div class="lev">
+          <div class="explanation8">
+            <span>ひき算</span><span>ふたけた</span>
+          </div>
+        </div>
+        <div class="lev9 hidden">
+          <div class="explanation99 hidden">
+            <span>９の段</span>
+          </div>
+        </div>
+        <div class="lev">
+          <div class="explanation9">九九のれんしゅう</div>
+        </div>
+        <div class="lev9 hidden">
+          <div class="explanation91 hidden">
+            <span>ぜんぶだよ</span>
+          </div>
+        </div>
+      </div>
+      <div class="raps2">
+        <div class="step">
+          <a href="https://kinaoshi.github.io/sentence/index.html"
+            >文章問題へ</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script></script>
+  </body>
+</html>
