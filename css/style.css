@@ -36,16 +36,18 @@ body {
   height: 70px;
   text-align: center;
   line-height: 30px;
+  user-select: none;
 }
 
 #contain div:nth-child(2) {
+  display: inline-block;
   font-size: 50px;
   font-weight: bold;
   width: 60px;
   height: 60px;
+  user-select: none;
 }
 #contain div:nth-child(4) {
-  
   width: 100px;
   height: 80px;
 }
@@ -57,6 +59,7 @@ body {
   text-align: right;
   line-height: 45px;
   font-size: 40px;
+  user-select: none;
 }
 
 .cou {
@@ -68,7 +71,7 @@ body {
   line-height: 30px;
   font-size: 20px;
   letter-spacing: 0.1em;
- 
+  user-select: none;
 }
 nav {
   height: 30px;
@@ -81,6 +84,7 @@ nav span:first-child {
   margin-left: 10px;
   text-align: center;
   line-height: 40px;
+  user-select: none;
 }
 nav span:nth-child(2) {
   color: rgb(0, 4, 253);
@@ -89,6 +93,7 @@ nav span:nth-child(2) {
   margin-right: 10px;
   margin-left: auto;
   line-height: 40px;
+  user-select: none;
 }
 
 #start {
@@ -203,9 +208,7 @@ section {
 #btn:active {
   margin-top: 14px;
   box-shadow: none;
-  
 }
-
 
 #again {
   cursor: pointer;
@@ -237,18 +240,18 @@ section {
 #icon img {
   margin-left: 10px;
   width: 120px;
- 
+  /* background: #76c4eb; */
   cursor: pointer;
+  border-radius: 50%;
   transition-property: transform;
-  
-  transition-duration: 1S;
+
+  transition-duration: 1s;
   transition-timing-function: ease;
   transition: transform 1s ease;
 }
 #icon img:hover {
   transform: translate(50px, 20px);
   transform: rotate(360deg);
-  
 }
 
 #icon img.hidden {
@@ -262,13 +265,12 @@ section {
   line-height: 50px;
   color: rgb(243, 23, 60);
   opacity: 0;
-  transition: opacity .2s;
+  transition: opacity 0.2s;
 }
 #come.showup {
   opacity: 1;
-  transition: opacity .2s;
+  transition: opacity 0.2s;
   transform: translateY(40px);
-
 }
 
 .main p {
@@ -283,16 +285,14 @@ section {
   text-align: left;
   line-height: 40px;
   color: rgb(4, 158, 17);
-  opacity: 0;  
-  transition: opacity .2s;
+  opacity: 0;
+  transition: opacity 0.2s;
   transform: translateY(-50px);
 }
 .nice.showdown {
   opacity: 1;
-  transition: opacity .2s;
+  transition: opacity 0.2s;
   transform: translateY(-20px);
-
-
 }
 
 .material-icons {
@@ -431,12 +431,9 @@ section {
 .explanation6.hidden,
 .explanation7.hidden,
 .explanation8.hidden,
-.explanation9.hidden
-
- {
+.explanation9.hidden {
   display: block;
 }
-
 
 .explanation1:hover,
 .explanation2:hover,
@@ -464,42 +461,41 @@ section {
   line-height: 60px;
   color: #04295a;
 }
- 
-  .explanation91,
-  .explanation92,
-  .explanation93,
-  .explanation94,
-  .explanation95,
-  .explanation96,
-  .explanation97,
-  .explanation98,
-  .explanation99{
-    margin: 0;
-    font-size: 24px;
-    width: 150px;
-    height: 60px;
-    padding: 0px;
-    text-align: center;
-    line-height: 60px;
-    list-style: height 28px;
-    color: crimson;
-    background: rgb(52, 185, 163);
-    border-radius: 6px;
-    cursor: pointer;
-    user-select: none;  
+
+.explanation91,
+.explanation92,
+.explanation93,
+.explanation94,
+.explanation95,
+.explanation96,
+.explanation97,
+.explanation98,
+.explanation99 {
+  margin: 0;
+  font-size: 24px;
+  width: 150px;
+  height: 60px;
+  padding: 0px;
+  text-align: center;
+  line-height: 60px;
+  list-style: height 28px;
+  color: crimson;
+  background: rgb(52, 185, 163);
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
 }
-  .explanation91.hidden,
-  .explanation92.hidden,
-  .explanation93.hidden,
-  .explanation94.hidden,
-  .explanation95.hidden,
-  .explanation96.hidden,
-  .explanation97.hidden,
-  .explanation98.hidden,
-  .explanation99.hidden 
-  {
-    display: none;
-  }
+.explanation91.hidden,
+.explanation92.hidden,
+.explanation93.hidden,
+.explanation94.hidden,
+.explanation95.hidden,
+.explanation96.hidden,
+.explanation97.hidden,
+.explanation98.hidden,
+.explanation99.hidden {
+  display: none;
+}
 
 .step {
   margin: auto 0px auto;
@@ -523,7 +519,6 @@ section {
   display: block;
 }
 .raps2 {
- 
   margin: 16px auto;
   width: 500px;
 }
